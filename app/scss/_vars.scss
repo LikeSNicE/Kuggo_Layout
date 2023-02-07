@@ -1,0 +1,102 @@
+$default: #282739;
+$gray-additional: #5D6C7B;
+$purple-link: #6F73EE;
+$gray-background: #F4F7FB;
+
+%jost-400{
+  font-family: 'Jost',sans-serif;
+  font-weight: 400;
+}
+
+%jost-500 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+%jost-600 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+
+%jost-700 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+}
+
+%emptyContent{
+  content: "";
+  position: absolute;
+}
+
+%arrow-left{
+  background-image: url(../icons/arrow-left.svg);
+  width: 12px;
+  height: 10px;
+  right: -20px;
+  left: 190px;
+  top: 7px;
+}
+
+%bgdefault{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+%btn--active{
+     border-color: $purple-link;
+     color: $purple-link;
+     background-color: #fff;
+     border: 2px solid $purple-link;
+}
+
+.btn-default-wp {
+  display: block;
+  width: 180px;
+  background-color: #fff;
+  font-weight: 400;
+  padding: 15px 25px;
+  color: $purple-link;
+  text-align: center;
+  height: 55px;
+  border-radius: 5px;
+  border: none;
+  // &--active{
+  //   border-color: $purple-link;
+  //   color: $purple-link;
+  //   background-color: #fff;
+  //   border: 2px solid $purple-link;
+  // }
+}
+
+.btn-default-wp--active{
+    display: block;
+    width: 180px;
+    border-color: $purple-link;
+    color: $purple-link;
+    background-color: #fff;
+    border: 2px solid $purple-link;
+    height: 55px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.watch-all-btn{
+  border-color: #6f73ee;
+  color: #6f73ee;
+  background-color: #fff;
+  border: 2px solid #6f73ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0;
+}
+
+.logo{
+  font-weight: 700;
+  color: $default;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 51px;
+}

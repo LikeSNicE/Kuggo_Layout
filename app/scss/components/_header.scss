@@ -1,0 +1,264 @@
+.header {
+  padding: 15px 0;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__contacts {
+      &-list {
+        display: flex;
+        align-items: center;
+      }
+
+      &-item {
+        &+.header-top__contacts-item {
+          margin-left: 20px;
+        }
+      }
+
+      &-link {
+        color: $default;
+      }
+    }
+
+    &__phone {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+
+      &-link {
+        color: $default;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: url('../icons/addPlus.svg');
+          width: 18px;
+          height: 18px;
+          right: -30px;
+          top: 2px;
+        }
+
+      }
+    }
+  }
+
+  &-top-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    &-logo {
+      font-weight: 700;
+      color: $default;
+    }
+
+    &-lines-wrap{
+      position: relative;
+    }
+
+
+    &-btn-link {
+      background-color: $purple-link;
+      color: #fff;
+      display: flex;
+      width: 120px;
+      text-align: center;
+      border: 1.5px solid $purple-link;
+      border-radius: 5px;
+      padding: 8px 0 8px 15px;
+      align-items: center;
+    }
+    &-box-line{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 15px;
+      height: 13px;
+      margin-right: 13px;
+    }
+    &-line{
+      background-color: #fff;
+      width: 15px;
+      height: 1px;
+      border-radius: 5px;
+      &-short{
+        width: 10px;
+        align-self: flex-end;
+      }
+    }
+
+    // input-big
+    &-wrap-form{
+      border: 1.5px solid $purple-link;
+      border-radius: 5px;
+      max-width: 600px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+    }
+
+    &-form{
+      display: flex;
+      max-height: 40px;
+      border: 1.5px solid $purple-link;
+      border-radius: 5px;
+      width: 600px;
+    }
+    &-input{
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      padding: 10px 0 10px 15px;
+    }
+    &-button{
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: $purple-link;
+      border: 2px solid $purple-link;
+      margin: -1px;
+      border-radius: 5px;
+    }
+    &-select{
+      outline: none;
+      border: none;
+      background-color: #F4F7FB;
+    }
+    &-list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    &-item{
+      & + .header-top-middle-item {
+        margin-left: 30px;
+      }
+      &:nth-child(3) +.header-top-middle-item {
+        margin-left: 40px;
+      }
+  }
+  &-img{
+    height: 20px;
+    max-width: 20px;
+  }
+    &-secondary{
+      display: flex;
+      align-items: center;
+      color: $default;
+    }
+    &-img--card {
+      margin-right: 20px;
+      
+    }
+  }
+
+  &-menu{
+    background-color: $gray-background;
+    .menu{
+      padding: 10px 0;
+    }
+    &-list{
+      display: flex;
+    }
+    &-item{
+      & + .header-menu-item{
+        margin-left: 50px;
+      }
+      & + .header-menu-installment{
+        margin-right: 110px;
+      }
+    }
+    &-link{
+      color: $default;
+      font-weight: 500;
+    }
+     &--installment{
+      position: relative;
+      &::before{
+        content: "Доступная рассрочка";
+        position: absolute;
+        background-color: $purple-link;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        padding: 3px 8px 1px;
+        left: 145px;
+        top: -3px;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+      }
+    }
+    &--sale{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../icons/sale.svg');
+        width: 20px;
+        height: 20px;
+        right: -25px;
+      }
+    }
+  }
+
+  &-bottom{
+    &-inner{
+      background-image: url('../images/header/header-bottom-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      padding: 30px 0 40px;
+      min-height: 420px;
+      // margin: 30px 30px 0 30px;
+    }
+    &-title{
+      font-size: 35px;
+      color: #fff;
+      line-height: 51px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 40px;
+      position: relative;
+      
+      }
+    &-subtitle{
+      color: #fff;
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: 400;
+    }
+    &-btn {
+    margin-top: 25px;
+    position: relative;
+    }
+
+     &-btn-wrap {
+       margin-top: 45px;
+       border: none;
+       background: transparent;
+     }
+
+     &-prev-btn,
+     &-next-btn{
+      border: none;
+      background: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+     }
+    }
+  }
+
+
+
+
